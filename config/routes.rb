@@ -1,4 +1,7 @@
 LauchApp::Application.routes.draw do
+  get "users/index"
+  get "users/new"
+  get "users/create"
   get "spots/index"
   get "spots/new"
   # The priority is based upon order of creation: first created -> highest priority.
