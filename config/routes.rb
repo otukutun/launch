@@ -1,7 +1,6 @@
 LauchApp::Application.routes.draw do
-  get "users/index"
-  get "users/new"
-  get "users/create"
+  resources :users
+  match '/signup', to: 'users#new', via: 'get'
   get "spots/index"
   get "spots/new"
   # The priority is based upon order of creation: first created -> highest priority.

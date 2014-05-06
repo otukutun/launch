@@ -7,10 +7,13 @@ gem 'rails', '4.0.2'
 group :development,:test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 group :test do
   gem 'selenium-webdriver','2.35.1'
   gem 'capybara'
+  gem 'factory_girl_rails'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
